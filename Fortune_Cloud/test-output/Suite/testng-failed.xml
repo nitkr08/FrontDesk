@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="true">
+  <test name="mozilla(failed)" parallel="true">
+    <classes>
+      <class name="Scenario_component.TC_001Login">
+        <methods>
+          <include name="test_case1"/>
+        </methods>
+      </class> <!-- Scenario_component.TC_001Login -->
+    </classes>
+  </test> <!-- mozilla(failed) -->
+  <test name="chrome (failed)" parallel="true">
+    <classes>
+      <class name="Scenario_component.TC_001Login">
+        <methods>
+          <include name="test_case1"/>
+        </methods>
+      </class> <!-- Scenario_component.TC_001Login -->
+    </classes>
+  </test> <!-- chrome (failed) -->
+</suite> <!-- Failed suite [Suite] -->
