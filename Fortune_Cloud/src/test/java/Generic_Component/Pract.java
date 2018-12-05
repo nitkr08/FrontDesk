@@ -14,7 +14,7 @@ public class Pract {
 	
 	@Test
 	public void Prcdemo(){
-		
+		My name is Nitish kumar
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://productsqa.idsnext.com");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
