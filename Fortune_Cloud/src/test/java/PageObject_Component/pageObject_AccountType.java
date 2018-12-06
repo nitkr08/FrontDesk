@@ -96,7 +96,6 @@ public class pageObject_AccountType {
 		Save_icon.click();
 		Back_button.click();
 		Button_Yes.click();
-		
-		
+			
 	}
 }
