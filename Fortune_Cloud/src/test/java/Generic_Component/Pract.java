@@ -31,6 +31,25 @@ public class Pract {
 //		driver.findElement(By.xpath(".//*[@class='fa fa-chevron-down']")).click();
 //		System.out.println("arrow mark");
 //		driver.findElement(By.linkText("Logout")).click();
+		
+		
+		
+//		String Before_xapth=".//*[@id='side-menu']/div[2]/main/section/app-account-type/div/div[4]/div/div[1]/div/div/div[1]/div/table/tbody/tr[";
+//		String After_xpath="]/td[2]";
+//		//for(int i=1;i<=10;i++){
+//		String abc=driver.findElement(By.xpath(Before_xapth+1+After_xpath)).getText();
+//		driver.findElement(By.xpath(Before_xapth+1+After_xpath)).click();
+//		driver.findElement(By.xpath(".//*[@class='icon-edit card-edit']")).click();
+//		Thread.sleep(5000);
+//		driver.findElement(By.xpath(".//*[@id='mdname-input']")).clear();
+//		driver.findElement(By.xpath(".//*[@id='mdname-input']")).sendKeys("Code25");
+//		driver.findElement(By.xpath(".//*[@class='icon-tick-inside-circle card-save']")).click();
+//		explicit_wait();
+//		driver.findElement(By.xpath(".//*[text()='Back']")).click();
+//		driver.findElement(By.xpath(".//*[text()='Yes']")).click();
+//	
+//		System.out.println(abc);
+//		//}	
 
 		
 	}
