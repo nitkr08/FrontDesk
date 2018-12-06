@@ -30,7 +30,7 @@ public class Pract {
 		
 //		driver.findElement(By.xpath(".//*[@class='fa fa-chevron-down']")).click();
 //		System.out.println("arrow mark");
-//		driver.findElement(By.linkText("Logout")).click();
+		driver.findElement(By.linkText("Logout")).click();
 		
 		
 		
