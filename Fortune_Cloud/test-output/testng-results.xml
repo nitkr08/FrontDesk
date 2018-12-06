@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51339" started-at="2018-12-06T16:16:51Z" finished-at="2018-12-06T16:17:43Z">
+  <suite name="Default suite" duration-ms="51918" started-at="2018-12-06T16:36:08Z" finished-at="2018-12-06T16:37:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51339" started-at="2018-12-06T16:16:51Z" finished-at="2018-12-06T16:17:43Z">
+    <test name="Default test" duration-ms="51918" started-at="2018-12-06T16:36:08Z" finished-at="2018-12-06T16:37:00Z">
       <class name="Scenario_component.TC_003AccountType">
-        <test-method status="PASS" signature="start_Accounttype()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="start_Accounttype" is-config="true" duration-ms="26696" started-at="2018-12-06T21:46:51Z" finished-at="2018-12-06T21:47:18Z">
+        <test-method status="PASS" signature="start_Accounttype()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="start_Accounttype" is-config="true" duration-ms="25974" started-at="2018-12-06T22:06:08Z" finished-at="2018-12-06T22:06:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start_Accounttype -->
-        <test-method status="PASS" signature="open_AccountType()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="open_AccountType" duration-ms="8576" started-at="2018-12-06T21:47:18Z" finished-at="2018-12-06T21:47:26Z">
+        <test-method status="PASS" signature="open_AccountType()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="open_AccountType" duration-ms="9399" started-at="2018-12-06T22:06:34Z" finished-at="2018-12-06T22:06:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_AccountType -->
-        <test-method status="PASS" signature="clickOnCreatebutton()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="clickOnCreatebutton" duration-ms="548" started-at="2018-12-06T21:47:26Z" finished-at="2018-12-06T21:47:27Z">
+        <test-method status="PASS" signature="clickOnCreatebutton()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="clickOnCreatebutton" duration-ms="360" started-at="2018-12-06T22:06:44Z" finished-at="2018-12-06T22:06:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnCreatebutton -->
-        <test-method status="PASS" signature="code_AccountType()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="code_AccountType" duration-ms="1218" started-at="2018-12-06T21:47:27Z" finished-at="2018-12-06T21:47:28Z">
+        <test-method status="PASS" signature="code_AccountType()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="code_AccountType" duration-ms="1271" started-at="2018-12-06T22:06:44Z" finished-at="2018-12-06T22:06:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- code_AccountType -->
-        <test-method status="PASS" signature="Name_AccountType()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="Name_AccountType" duration-ms="236" started-at="2018-12-06T21:47:28Z" finished-at="2018-12-06T21:47:28Z">
+        <test-method status="PASS" signature="Name_AccountType()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="Name_AccountType" duration-ms="234" started-at="2018-12-06T22:06:45Z" finished-at="2018-12-06T22:06:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Name_AccountType -->
-        <test-method status="PASS" signature="ClickSave()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="ClickSave" duration-ms="314" started-at="2018-12-06T21:47:28Z" finished-at="2018-12-06T21:47:29Z">
+        <test-method status="PASS" signature="ClickSave()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="ClickSave" duration-ms="336" started-at="2018-12-06T22:06:46Z" finished-at="2018-12-06T22:06:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickSave -->
-        <test-method status="PASS" signature="Edit_Group()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="Edit_Group" duration-ms="3027" started-at="2018-12-06T21:47:29Z" finished-at="2018-12-06T21:47:32Z">
+        <test-method status="PASS" signature="Edit_Group()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="Edit_Group" duration-ms="2914" started-at="2018-12-06T22:06:46Z" finished-at="2018-12-06T22:06:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Edit_Group -->
-        <test-method status="PASS" signature="Delete_Group()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="Delete_Group" duration-ms="2052" started-at="2018-12-06T21:47:32Z" finished-at="2018-12-06T21:47:34Z">
+        <test-method status="PASS" signature="Delete_Group()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="Delete_Group" duration-ms="2248" started-at="2018-12-06T22:06:49Z" finished-at="2018-12-06T22:06:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Delete_Group -->
-        <test-method status="PASS" signature="logout_from_application()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="logout_from_application" is-config="true" duration-ms="8635" started-at="2018-12-06T21:47:34Z" finished-at="2018-12-06T21:47:43Z">
+        <test-method status="PASS" signature="logout_from_application()[pri:0, instance:Scenario_component.TC_003AccountType@d8355a8]" name="logout_from_application" is-config="true" duration-ms="9147" started-at="2018-12-06T22:06:51Z" finished-at="2018-12-06T22:07:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout_from_application -->
