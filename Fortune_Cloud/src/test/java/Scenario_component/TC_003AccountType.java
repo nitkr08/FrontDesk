@@ -57,32 +57,21 @@ public class TC_003AccountType extends base_Class{
 	
 	@Test(priority=6)
 	public void Edit_Group() throws InterruptedException{
-		String Before_xapth=".//*[@id='side-menu']/div[2]/main/section/app-account-type/div/div[4]/div/div[1]/div/div/div[1]/div/table/tbody/tr[";
-		String After_xpath="]/td[2]";
-		//for(int i=1;i<=10;i++){
-		String abc=driver.findElement(By.xpath(Before_xapth+1+After_xpath)).getText();
-		driver.findElement(By.xpath(Before_xapth+1+After_xpath)).click();
-		driver.findElement(By.xpath(".//*[@class='icon-edit card-edit']")).click();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath(".//*[@id='mdname']")).clear();
-		driver.findElement(By.xpath(".//*[@id='mdname']")).sendKeys("Code25");
-		driver.findElement(By.xpath(".//*[@class='icon-tick-inside-circle card-save']")).click();
-		driver.findElement(By.xpath(".//*[text()='Back']")).click();
-	
-		System.out.println(abc);
-		//}	
+		
+		AccountType.Edit_Operation();
+
 	}
 	
-//	@Test(priority=7)
-//	public void Delete_Group(){
-//		AccountType.clickOnDeletePOM();	
-//	}
-//	
-//	@AfterClass
-//	public void logout_from_application() throws InterruptedException{
-//		pageObject_login log=new pageObject_login(driver);
-//		Thread.sleep(5000);
-//		log.loggedout();
-//		driver.quit();
-//	}
+	@Test(priority=7)
+	public void Delete_Group(){
+		AccountType.clickOnDeletePOM();	
+	}
+	
+	@AfterClass
+	public void logout_from_application() throws InterruptedException{
+		pageObject_login log=new pageObject_login(driver);
+		Thread.sleep(5000);
+		log.loggedout();
+		driver.quit();
+	}
 }

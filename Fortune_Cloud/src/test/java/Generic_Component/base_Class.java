@@ -31,7 +31,7 @@ public class base_Class {
 	
 	public static void property_call() throws IOException
 	{
-		FileInputStream prop_file = new FileInputStream("D:\\Fortune_Cloud\\src\\test\\java\\dataprovider.properties");
+		FileInputStream prop_file = new FileInputStream("C:\\Users\\sanu\\git\\FrontDesk\\Fortune_Cloud\\src\\test\\java\\dataprovider.properties");
 		prop = new Properties();
 		prop.load(prop_file);
 	}
@@ -64,10 +64,10 @@ public class base_Class {
 			assertion=new SoftAssert();
 		}
 		public static void explicit_wait(){
-			WebDriverWait exp_wait=new WebDriverWait(driver,50);
+			WebDriverWait exp_wait=new WebDriverWait(driver,20);
 		}
 		public static void readExcel() throws Exception{
-			File src=new File("D:\\Fortune_Cloud\\TestData.xlsx");
+			File src=new File("C:\\Users\\sanu\\git\\FrontDesk\\Fortune_Cloud\\TestData.xlsx");
 			FileInputStream fis=new FileInputStream(src);
 			XSSFWorkbook wb=new XSSFWorkbook(fis);//for xls file HSSFWorkbook wb=new HSSFWorkbook(fis); 
 			XSSFSheet sh1=wb.getSheetAt(0);

@@ -42,6 +42,24 @@ public class pageObject_AccountType {
 	@FindBy(xpath=".//*[text()='OK']")
 	public WebElement OK_button;//click on Ok button
 	
+	@FindBy(xpath=".//*[@id='side-menu']/div[2]/main/section/app-account-type/div/div[4]/div/div[1]/div/div/div[1]/div/table/tbody/tr[1]/td[2]")
+	public WebElement First_value;
+	
+	@FindBy(xpath=".//*[@class='icon-edit card-edit']")
+	public WebElement Edit_icon;
+	
+	@FindBy(xpath=".//*[@id='mdname-input']")
+	public WebElement Name_field;
+	
+	@FindBy(xpath=".//*[@class='icon-tick-inside-circle card-save']")
+	public WebElement Save_icon;
+	
+	@FindBy(xpath=".//*[text()='Back']")
+	public WebElement Back_button;
+	
+	@FindBy(xpath=".//*[text()='Yes']")
+	public WebElement Button_Yes;
+	
 	//2. Actions
 	public void enter_AccountTypePOM(){
 		search_fieldAccountTypeX.click();
@@ -68,5 +86,17 @@ public class pageObject_AccountType {
 		Delete_button.click();
 		Yes_button.click();
 		OK_button.click();
+	}
+	
+	public void Edit_Operation(){
+		First_value.click();
+		Edit_icon.click();
+		Name_field.clear();
+		Name_field.sendKeys("wwww");
+		Save_icon.click();
+		Back_button.click();
+		Button_Yes.click();
+		
+		
 	}
 }
