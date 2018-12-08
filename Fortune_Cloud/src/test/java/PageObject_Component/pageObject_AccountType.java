@@ -64,11 +64,21 @@ public class pageObject_AccountType {
 	@FindBy(xpath=".//*[@title='Copy From Master']")
 	public WebElement Copy_from_master;//Copy From master
 	
-	@FindBy(xpath=".//*[@class='cp-check-width']")
-	public List<WebElement> First_Check_box;//First check box selection
+	@FindBy(xpath=".//*[@class='col s12 col m12 col l12']/div[1]/md-card/div/div/table/tbody/tr[1]/td[1]")
+	public WebElement First_Check_box_Group;//First check box selection in copy from master from Property list
+	
+	@FindBy(xpath="//*[@class='icon-Move-to-Property cp-right']")
+	public WebElement Move_to_Property;//Move to property
+	
+	@FindBy(xpath="//*[@class='icon-Move-to-Group cp-left']")
+	public WebElement Move_to_Group;//Move to Group
+	
+	@FindBy(xpath=".//*[@class='col s12 col m12 col l12']/div[2]/md-card/div/div/table/tbody/tr[1]/td[1]")
+	public WebElement First_Check_box_Property;//First check box selection in copy from master from Property list
+	
+	@FindBy(xpath=".//*[text()='Back']")
+	public WebElement Back_CopyFromMaster;//Back button during edit
 
-	@FindBy(xpath=".//*[@class='cp-p animated fadeInUp']")
-	public List<WebElement> Move_to_Property;//Move to property
 	
 	//2. Actions
 	//This method will land to Account type
@@ -117,15 +127,24 @@ public class pageObject_AccountType {
 		Name_field.sendKeys("wwww");
 		Save_icon.click();
 		Back_button.click();
-		Button_Yes.click();
+		//Button_Yes.click();
 			
 	}
 	
 	//This method will take to copy from master
-	public void CopyFromMaster(){
+	public void CopyFromMaster() throws InterruptedException{
 		Copy_from_master.click();
-		First_Check_box.get(1).click();
-		Move_to_Property.get(0).click();
+		First_Check_box_Group.click();
+		Move_to_Property.click();
+		Thread.sleep(3000);
+		First_Check_box_Property.click();
+		Move_to_Group.click();
+		Back_CopyFromMaster.click();
+		clickOnDeletePOM();
+		
+		
+		
+		
 		
 	}
 }

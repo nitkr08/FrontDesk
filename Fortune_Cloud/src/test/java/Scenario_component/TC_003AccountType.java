@@ -1,6 +1,8 @@
 package Scenario_component;
 
 import java.io.IOException;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -27,7 +29,7 @@ public class TC_003AccountType extends base_Class{
 	
 	@Test(priority=2,description="Create Record at Group level")
 	public void CreateGroupRecord() throws Exception{
-		
+		//driver.findElement(By.xpath(".//*[@for='radio-2']")).click();
 		AccountType.click_createButtonPOM();
 		base_Class.readExcel();
 		AccountType.enterCodePOM();
@@ -54,7 +56,7 @@ public class TC_003AccountType extends base_Class{
 	@AfterClass(description="logout from application")
 	public void logout_from_application() throws InterruptedException{
 		pageObject_login log=new pageObject_login(driver);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		log.loggedout();
 		driver.quit();
 	}

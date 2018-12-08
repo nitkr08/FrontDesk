@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class Pract {
 	
 	@Test
-	public void Prcdemo(){
+	public void Prcdemo() throws InterruptedException{
 		
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://productsqa.idsnext.com");
@@ -27,11 +27,15 @@ public class Pract {
 		
 		
 		driver.findElement(By.xpath(".//*[@title='Copy From Master']")).click();
-		List<WebElement> check_box=driver.findElements(By.xpath(".//*[@class='cp-check-width']"));
-		check_box.get(1).click();
+		driver.findElement(By.xpath(".//*[@class='col s12 col m12 col l12']/div[1]/md-card/div/div/table/tbody/tr[1]/td[1]")).click();
+//		List<WebElement> check_box=driver.findElements(By.xpath(".//*[@class='cp-check-width']"));
+//		check_box.get(1).click();
 		
-		List<WebElement> button=driver.findElements(By.xpath(".//*[@class='cp-p animated fadeInUp']"));
-		button.get(0).click();
+		driver.findElement(By.xpath("//*[@class='icon-Move-to-Property cp-right']")).click();
+		
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(".//*[@class='col s12 col m12 col l12']/div[2]/md-card/div/div/table/tbody/tr[1]/td[1]")).click();
+		driver.findElement(By.xpath("//*[@class='icon-Move-to-Group cp-left']")).click();
 		
 		
 		
