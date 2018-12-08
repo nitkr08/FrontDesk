@@ -2,7 +2,6 @@ package Generic_Component;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -18,19 +17,27 @@ public class Pract {
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://productsqa.idsnext.com");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.findElement(By.id("md-input-0-input")).sendKeys("********");
-		driver.findElement(By.id("md-input-1-input")).sendKeys("********");
+		driver.findElement(By.id("md-input-0-input")).sendKeys("nitish.kumar@idsnext.com");
+		driver.findElement(By.id("md-input-1-input")).sendKeys("1234@quality");
 		driver.findElement(By.className("login-button")).click();
 		driver.findElement(By.xpath(".//*[@id='Front Desk']")).click();
-		driver.findElement(By.xpath(".//*[@id='menusearch']/div/input")).sendKeys("Account type");
+		driver.findElement(By.xpath(".//*[@id='menusearch']/div/input")).sendKeys("Account");
 		driver.findElement(By.xpath(".//*[@id='menusearch']/div/input")).sendKeys(Keys.ARROW_DOWN);
 		driver.findElement(By.xpath(".//*[@id='menusearch']/div/input")).sendKeys(Keys.ENTER);
 		
-		driver.findElement(By.xpath(".//*[@class='custom-tbody']/tr[1]/td[1]")).click();
 		
-//		driver.findElement(By.xpath(".//*[@class='fa fa-chevron-down']")).click();
-//		System.out.println("arrow mark");
-		driver.findElement(By.linkText("Logout")).click();
+		driver.findElement(By.xpath(".//*[@title='Copy From Master']")).click();
+		List<WebElement> check_box=driver.findElements(By.xpath(".//*[@class='cp-check-width']"));
+		check_box.get(1).click();
+		
+		List<WebElement> button=driver.findElements(By.xpath(".//*[@class='cp-p animated fadeInUp']"));
+		button.get(0).click();
+		
+		
+		
+//		driver.findElement(By.xpath(".//*[@class='custom-tbody']/tr[1]/td[1]")).click();
+//		driver.findElement(By.xpath(".//*[@class='fa fa-chevron-down']")).click();		
+//		driver.findElement(By.linkText("Logout")).click();
 		
 		
 		
@@ -50,6 +57,18 @@ public class Pract {
 //	
 //		System.out.println(abc);
 //		//}	
+		
+		
+		
+		
+//		WebElement btn_Group=driver.findElement(By.xpath(".//*[@for='radio-1']"));
+//		Boolean Btn_selected_Group=btn_Group.isDisplayed();
+//		WebElement btn_Property=driver.findElement(By.xpath(".//*[@for='radio-2']"));
+//		Boolean Btn_Displayed_property=btn_Property.isDisplayed();
+//		use_assert();
+//		assertion.assertTrue(Btn_selected_Group, "Button is selected");
+//		assertion.assertTrue(Btn_Displayed_property, "Property radio is displayed");
+//		assertion.assertAll();
 
 		
 	}
