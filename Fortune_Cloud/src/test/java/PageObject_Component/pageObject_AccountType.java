@@ -1,5 +1,6 @@
 package PageObject_Component;
 
+import java.util.List;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,25 +43,35 @@ public class pageObject_AccountType {
 	@FindBy(xpath=".//*[text()='OK']")
 	public WebElement OK_button;//click on Ok button
 	
-	@FindBy(xpath=".//*[@id='side-menu']/div[2]/main/section/app-account-type/div/div[4]/div/div[1]/div/div/div[1]/div/table/tbody/tr[1]/td[2]")
-	public WebElement First_value;
+	@FindBy(xpath=".//*[@class='custom-tbody']/tr[1]/td[2]")
+	public WebElement First_value;//first value of the list data table
 	
 	@FindBy(xpath=".//*[@class='icon-edit card-edit']")
-	public WebElement Edit_icon;
+	public WebElement Edit_icon;// Edit icon during edit operation
 	
 	@FindBy(xpath=".//*[@id='mdname-input']")
-	public WebElement Name_field;
+	public WebElement Name_field;//Name field during edit operation
 	
 	@FindBy(xpath=".//*[@class='icon-tick-inside-circle card-save']")
-	public WebElement Save_icon;
+	public WebElement Save_icon;//save button during edit operation
 	
 	@FindBy(xpath=".//*[text()='Back']")
-	public WebElement Back_button;
+	public WebElement Back_button;//Back button during edit
 	
 	@FindBy(xpath=".//*[text()='Yes']")
-	public WebElement Button_Yes;
+	public WebElement Button_Yes;//Yes button of back pop-up
+	
+	@FindBy(xpath=".//*[@title='Copy From Master']")
+	public WebElement Copy_from_master;//Copy From master
+	
+	@FindBy(xpath=".//*[@class='cp-check-width']")
+	public List<WebElement> First_Check_box;//First check box selection
+
+	@FindBy(xpath=".//*[@class='cp-p animated fadeInUp']")
+	public List<WebElement> Move_to_Property;//Move to property
 	
 	//2. Actions
+	//This method will land to Account type
 	public void enter_AccountTypePOM(){
 		search_fieldAccountTypeX.click();
 		search_fieldAccountTypeX.sendKeys("Account Type");
@@ -69,18 +80,28 @@ public class pageObject_AccountType {
 		search_fieldAccountTypeX.sendKeys(Keys.ENTER);
 		
 		}
+	
+	//This method will click on Create button
 	public void click_createButtonPOM() throws Exception{
 		createButtonX.click();
 	}
+	
+	//This method will enter code
 	public void enterCodePOM(){
 		enter_CodeTextX.sendKeys(base_Class.Code_data0);
 	}
+	
+	//This method will enter Name
 	public void enterNamePOM(){
 		enter_NameTextX.sendKeys(base_Class.Name_data0);
 	}
+	
+	//This method will click on save button
 	public void clickOnSavePOM(){
 		save_buttonX.click();
 	}
+	
+	//This method will delete record
 	public void clickOnDeletePOM(){
 		Select_checkbox.click();
 		Delete_button.click();
@@ -88,6 +109,7 @@ public class pageObject_AccountType {
 		OK_button.click();
 	}
 	
+	//This method will edit record
 	public void Edit_Operation(){
 		First_value.click();
 		Edit_icon.click();
@@ -97,5 +119,13 @@ public class pageObject_AccountType {
 		Back_button.click();
 		Button_Yes.click();
 			
+	}
+	
+	//This method will take to copy from master
+	public void CopyFromMaster(){
+		Copy_from_master.click();
+		First_Check_box.get(1).click();
+		Move_to_Property.get(0).click();
+		
 	}
 }

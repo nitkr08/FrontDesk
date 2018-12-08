@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Scenario_component.TC_003AccountType">
+      <class name="Generic_Component.Pract">
         <methods>
-          <include name="logout_from_application"/>
-          <include name="start_Accounttype"/>
-          <include name="Edit_Group"/>
+          <include name="Prcdemo"/>
         </methods>
-      </class> <!-- Scenario_component.TC_003AccountType -->
+      </class> <!-- Generic_Component.Pract -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
